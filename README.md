@@ -177,12 +177,12 @@ Veamos como usar el estado.
     ```
     3. Finalmente, en el render hemos hecho un par de cosas:
         1. Una constante que dependiendo del estado (si es verdadero o falso) me guarda el color del background (en un objeto con notacion compatible con stilos de js de css):
-         ```jsx
-                const backgroundColor = {
-                    backgroundColor: this.state.colorOriginal ? "red" : "green"
-                };
-            ```
-        2. Hemos asignado la constante que almacenaba los estilos (el background-color) a los estilos en línea y asignado el método changeColor al evento onClick. (el bind(this) es importante que se ponga al vincular métodos a eventos, porque pierde el scope de this (No sé como explicar esto de manera sencilla sin una pizarrita y muchos colorinchis 🤔 )).
+        ```jsx
+            const backgroundColor = {
+                backgroundColor: this.state.colorOriginal ? "red" : "green"
+            };
+        ```
+        2. Hemos asignado la constante que almacenaba los estilos (el background-color) a los estilos en línea y asignado el método changeColor al evento onClick. (el `bind(this)` es importante que se ponga al vincular métodos a eventos, porque pierde el scope de `this` (No sé como explicar esto de manera sencilla sin una pizarrita y muchos colorinchis 🤔 )).
         ```jsx
             <div
                 className="c-menu"
