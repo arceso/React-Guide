@@ -54,12 +54,12 @@ Ahora que tenemos creado y arrancado el proyecto, vamosa añadir un componente:
 
 6. Observa como se puede ver el componente en la aplicacion. *FUNSIONA! EHTÁ BIBO!*
 
-Notas extra:
-El componente que acabamos de crear es un *componente tonto*:
+    Notas extra:
+    El componente que acabamos de crear es un *componente tonto*:
     * No entiende el flujo de la aplicación.
     * Puede realizar operaciones en js.
 
-¿En qué se diferencia de un *componente listo*?
+    ¿En qué se diferencia de un *componente listo*?
     * El listo tiene estados.
     * El listo tiene ciclo de vida.
 
