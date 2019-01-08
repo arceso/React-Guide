@@ -1,9 +1,9 @@
 ## Cómo construir una aplicación desde cero con React:
 
-# 1. Crear el proyecto:
+### 1. Crear el proyecto:
 Vamos a instalar el software minimo para poder crear un proyecto:
 
-1. Instalar [nodejs|https://nodejs.org/es/].
+1. Instalar [nodejs](https://nodejs.org/es/).
 
 2. Abrir la consola:
 
@@ -25,7 +25,7 @@ Vamos a instalar el software minimo para poder crear un proyecto:
     `cd <nombre-de-tu-app>`
     `npm start`
 
-# 2. Crear un componente:
+### 2. Crear un componente:
 Ahora que tenemos creado y arrancado el proyecto, vamosa añadir un componente:
 
 1. Abrir el proyecto con el editor de texto de preferencia (Recomendaciones personales: VSCode o Atom).
@@ -65,7 +65,7 @@ El componente que acabamos de crear es un *componente tonto*:
 
 Vamos a crear un *componente listo* para entender las diferencias.
 
-# 3. Crear un componente Listo:
+### 3. Crear un componente Listo:
 1. Crea un nuevo componente llamado `Menu` (Mira el paso 2-3 si no recueras como se hacía) y copia el siguiente código:
 ```jsx
 import React, { Component } from "react";
@@ -109,7 +109,7 @@ export class Menu extends Component {
 ```
 
 2. Este componente, al ser listo puede usar el ciclo de vida de React:
-    * `componentDidMount, componentDidUpdate, componentWillUnmount, render` Son momentos que recorre un componente de React, para una lista exhaustiva, visitar la [Guia|https://reactjs.org/docs/state-and-lifecycle.html#adding-lifecycle-methods-to-a-class] de estados de React.
+    * `componentDidMount, componentDidUpdate, componentWillUnmount, render` Son momentos que recorre un componente de React, para una lista exhaustiva, visitar la [Guia de estados de React.](https://reactjs.org/docs/state-and-lifecycle.html#adding-lifecycle-methods-to-a-class)
     * De especial importancia es `Render()`, que es la que dicta el marcado base del componente. Este retornará un segmento HTML, que ha de tener un ÚNICO elemento    raiz HTML (Ha de estar englobado todo por un unico tag).
 
 3. Al ser listo, tambien es capaz de tener estados:
@@ -120,7 +120,7 @@ export class Menu extends Component {
     1. Si vas al hijo `MenuItem`, podrás ver que llama a props.active para determinar un modificador de clase.
     2. También podrás ver que hace referencia a props.child, pero no le estámos padando ningun `child={algo}`, es porque el .child es el prop que va entre los tags. Este puede ser lo que sea, desde numeros, cadenas de texto, hasta uno o varios componentes.
 
-# 4. El estado de un componente
+### 4. El estado de un componente
 Veamos como usar el estado.
 
 1. Abre el componente Menu y realiza los siguientes cambios:
